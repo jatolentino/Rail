@@ -101,6 +101,7 @@ h1, h2, h3, h4, h5, h6, figure {
   width: 100%;
   padding: 20px 0;
   z-index: 1001;
+  background: black; /* #4d4d4d; MODIFIED */ 
 }
 @media screen and (max-width: 768px) {
   .gtco-nav {
@@ -759,22 +760,23 @@ form label {
 }
 
 #gtco-features {
-  background: #09C6AB;
+  background: white;  /* cyan default #09C6AB; */
 }
 #gtco-features .gtco-heading h2 {
-  color: #fff;
+  color: black;  /* cyan fff default #09C6AB; */
 }
 #gtco-features .gtco-heading p {
-  color: rgba(255, 255, 255, 0.7);
+  color: black;
 }
 #gtco-features .feature-center {
   color: #fff;
 }
+
 #gtco-features .feature-center .icon {
   width: 90px;
   height: 90px;
   border: 1px solid rgba(255, 255, 255, 0.8);
-  background: #09C6AB;
+  background: #09C6AB; 
 }
 #gtco-features .feature-center .icon i {
   color: #fff;
@@ -783,10 +785,10 @@ form label {
 }
 #gtco-features .feature-center h3 {
   font-weight: 400;
-  color: #fff;
+  color: black;
 }
 #gtco-features .feature-center p {
-  color: rgba(255, 255, 255, 0.7);
+  color: black; /*rgba(255, 255, 255, 0.7);*/
 }
 
 #gtco-features-2 {
