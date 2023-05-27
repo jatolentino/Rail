@@ -1900,3 +1900,41 @@ form label {
 }
 
 /*# sourceMappingURL=style.css.map */
+.modal-dialog {
+  max-width: 800px;
+  margin: 30px auto;
+}
+
+.svg-video {
+	background-color: transparent;
+	border: 0;
+	padding: 0;
+  cursor: pointer;
+  margin-top: 17%;
+  margin-left: 48.5%;
+}
+.svg-video svg {
+	cursor: pointer;
+}
+
+
+.modal-dialog {
+  max-width: 800px;
+  margin: 30px auto;
+  margin-top: 10%;
+}
+
+.modal-body {
+position:relative;
+padding:0px;
+}
+.close {
+position:absolute;
+right:-30px;
+top:0;
+z-index:999;
+font-size:2rem;
+font-weight: normal;
+color:#fff;
+opacity:1;
+}
