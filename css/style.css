@@ -452,16 +452,6 @@ h1, h2, h3, h4, h5, h6, figure {
 .gtco-cover a:hover {
   color: white;
 }
-.gtco-cover .overlay {
-  z-index: 1;
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.2);
-}
-
 .gtco-cover .overlay-video {
   z-index: 1;
   position: absolute;
@@ -471,7 +461,15 @@ h1, h2, h3, h4, h5, h6, figure {
   right: 0;
   background: rgba(0, 0, 0, 0);
 }
-
+.gtco-cover .overlay {
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.2);
+}
 .gtco-cover > .gtco-container {
   position: relative;
   z-index: 10;
@@ -745,7 +743,7 @@ form label {
 #gtco-subscribe,
 #gtco-footer,
 .gtco-section {
-  padding: 7em 0;
+  padding: 10em 0;
   clear: both;
   position: relative;
 }
@@ -787,7 +785,7 @@ form label {
   width: 90px;
   height: 90px;
   border: 1px solid rgba(255, 255, 255, 0.8);
-  background: #09C6AB; 
+  background: #09C6AB;
 }
 #gtco-features .feature-center .icon i {
   color: #fff;
