@@ -89,12 +89,41 @@
 			
 		</div>
 	</nav>
-	
+	<script>
+	// 		document.addEventListener('click', function (event) {
+	// 	alert("hello")
+	// }, false);
+
+	// document.addEventListener('click', function (event) {
+	// 	alert("hello")
+	// 	}, false);
+	// function myfun(){
+	// 	alert("hello")
+	// }
+	</script>
+
 	<header id="gtco-header" class="gtco-cover gtco-cover-md" role="banner">
 		<!-- <header id="gtco-header" class="gtco-cover gtco-cover-md" role="banner" style="background-video: url(images/out.mp4)"> -->
 		<section class="wrapper">
-			<a target="_self" role="button" class="u9k3ts" tabindex="0" style="position: absolute; left: 48.5%;  margin-top:400px">
+			<a target="_self"  role="button" class="u9k3ts" tabindex="0" style="position: absolute; left: 48.5%;  margin-top:400px">
 				<!-- <div data-testid="svgRoot-comp-k9gdjhbk" class="aizuI7 TcoJIb R8rhQA comp-k9gdjhbk"  > -->
+					
+				<!-- </div> -->
+				<p style="color:white;font-size:16px; ">Play Clip</p>
+				<p style="color:white;font-size:16px;margin-left:-30%">Launch on: 5/27/23 12:00 EST</p>
+			</a>
+			<div class="video-wrap">
+				
+				<video src="images/intro-Rail-h264.mp4"  autoplay="true" loop="true" style="width:100%" autoplay muted> 
+<!-- 				 <video src="images/intro-Rail.mp4"  autoplay="true" loop="true" style="width:100%" autoplay muted>-->
+			</video>
+			</div>
+		<div class="overlay-video">
+			<div class="container">
+			
+				<!-- Button trigger modal -->
+				<!-- <button type="button" class="btn btn-primary video-btn" data-toggle="modal" data-src="https://player.vimeo.com/video/58385453?badge=0&autoplay=1&loop=1" data-target="#myModal"> Play Vimeo Video </button> -->
+				<button class="svg-video" style="margin-top:27%; margin-left:47.5%" type="button" data-toggle="modal" data-src="https://player.vimeo.com/video/830780492?h=926d88c795&amp;badge=0&amp;autoplay=1&amp;player_id=0&amp;app_id=58479" data-target="#myModal">
 					<svg data-bbox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200" >
 						<g>
 							<path fill="#fff" d="M45.563,29.174l-22-15c-0.307-0.208-0.703-0.231-1.031-0.058C22.205,14.289,22,14.629,22,15v30
@@ -104,110 +133,37 @@
 								S14.561,2,30,2s28,12.561,28,28S45.439,58,30,58z"/>
 						</g>
 					</svg>
-				<!-- </div> -->
-				<p style="color:white;font-size:16px; margin-top: -65%">Play Clip</p>
-				<p style="color:white;font-size:16px; margin-top: -70%;margin-left:-20%">Launch on: 5/27/23 12:00 EST</p>
-			</a>
-			<div class="video-wrap">
-				
-				<video src="images/intro-Rail-h264.mp4"  autoplay="true" loop="true" style="width:100%" autoplay muted> 
-<!-- 				 <video src="images/intro-Rail.mp4"  autoplay="true" loop="true" style="width:100%" autoplay muted>-->
-			</video>
+				</button>
+
+
 			</div>
-		<div class="overlay-video"></div>
-		<!-- <div class="gtco-container">
-			<div class="row">
-				<div class="col-md-12 col-md-offset-0 text-left">
-					
+		
+		</div>
+		
 
-					<div class="row row-mt-15em">
-						<div class="col-md-7 mt-text animate-box" data-animate-effect="fadeInUp">
-							<h1>Where
-							to go today?</h1>		
+				<!-- Modal -->
+				<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				  <div class="modal-dialog" role="document">
+					<div class="modal-content">
+					  <div class="modal-body">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						  <span aria-hidden="true">&times;</span>
+						</button>
+						<!-- 16:9 aspect ratio -->
+						<div class="embed-responsive embed-responsive-16by9">
+						  <iframe class="embed-responsive-item" src="" allow="autoplay" frameborder="0" id="video" allowscriptaccess="always" mozallowfullscreen webkitallowfullscreen allowfullscreen></iframe>
 						</div>
-						
-						<br>
-						<br>
-						<br>
-						<br>
-						<br>
-						<div class="col-md-4 col-md-push-1 animate-box" data-animate-effect="fadeInRight">
-							<div class="form-wrap">
-								<div class="tab">
-									
-									<div class="tab-content">
-										<div class="tab-content-inner active" data-content="signup">
-											<h3>Book Your Trip</h3>
-											<form action="#">
-												<div class="row form-group">
-													<div class="col-md-12">
-														<label for="fullname">Your Name</label>
-														<input type="text" id="fullname" class="form-control">
-													</div>
-												</div>
-												<div class="row form-group">
-													<div class="col-md-12">
-														<label for="activities">Departure</label>
-														<select name="#" id="activities" class="form-control">
-															
-															<option value="">Rockefeller Plaza</option>
-															<option value="">Chrysler Building</option>
-															<option value="">Empire State Building</option>
-															<option value="">Flatiron Building</option>
-															<option value="">Woolworth Building</option>
-														</select>
-													</div>
-												</div>
-												<div class="row form-group">
-													<div class="col-md-12">
-														<label for="destination">Destination</label>
-														<select name="#" id="destination" class="form-control">
-															
-															<option value="">Empire State Building</option>
-															<option value="">Chrysler Building</option>
-															<option value="">Woolworth Building</option>
-															<option value="">Flatiron Building</option>
-															<option value="">Rockefeller Plaza</option> 
-														</select>
-													</div>
-												</div>
-												
-												<div class="row form-group">
-													<div class="col-md-12">
-														<label for="date-start">Date Travel</label>
-														<input type="text" id="date-start" class="form-control">
-													</div>
-												</div>
-
-												<div class="row form-group">
-													<div class="col-md-12">
-														<label for="datetime-start">EST Time</label>
-														<input type="text" id="datetime-start" class="form-control">
-													</div>
-												</div>
-
-												<div class="row form-group">
-													<div class="col-md-12">
-														<input type="submit" class="btn btn-primary btn-block" value="Submit">
-													</div>
-												</div>
-											</form>	
-										</div>
-
-										
-									</div>
-								</div>
-							</div>
-						</div>
+					  </div>
 					</div>
-							
-					
+				  </div>
 				</div>
-			</div>
-		</div> -->
+				
+
 	
 	</section>
 	</header>
+
+	
 
 	<!-- <div class="gtco-section" >
 		<div class="gtco-container" style="margin-top:5%">
@@ -407,13 +363,13 @@
 	</div>
 
 	<div class="gtco-sm" data-stellar-background-ratio="0.5" style="text-align: center">
-		<video src="images/water.mp4"  style="object-fit:cover; overflow: hidden;" autoplay="true" loop="true" autoplay muted></video>
+		<video src="images/water-ver1.mp4"  style="object-fit:cover; overflow: hidden;" autoplay="true" loop="true" autoplay muted></video>
 		<!-- <div style="width: 100%; height: 20%; overflow: hidden;">
-			<video src="images/water.mp4" loop="loop" style="width: 100%;" autoplay muted> width: 1920px;height:900px;
+			<video src="images/water-ver1.mp4" loop="loop" style="width: 100%;height:50%;" autoplay muted> 
 			</video>
 		</div> -->
 		<div class="display-t" style="position: absolute; margin-top: -30%; left: 50%; transform: translate(-50%, -50%);">
-			<h1 style="font-size: 59px; line-height: 1.5; font-weight: 300;color: white">Hydrogen Batteries power our eVTOLs producing zero pollutants</h1>
+			<h1 style="font-size: 59px; line-height: 1.5; font-weight: 300;color: black">Hydrogen Batteries power our eVTOLs producing zero pollutants</h1>
 		</div>
 	</div>
 	<!-- <div class="gtco-cover">
@@ -613,6 +569,44 @@
 	<!-- Main -->
 	<script src="js/main.js"></script>
 
+	<script>
+		$(document).ready(function() {
+
+			// Gets the video src from the data-src on each button
+
+			var $videoSrc;  
+			$('.svg-video').click(function() {
+				$videoSrc = $(this).data( "src" );
+			});
+			console.log($videoSrc);
+
+			
+			
+			// when the modal is opened autoplay it  
+			$('#myModal').on('shown.bs.modal', function (e) {
+				
+			// set the video src to autoplay and not to show related video. Youtube related video is like a box of chocolates... you never know what you're gonna get
+			$("#video").attr('src',$videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0");
+
+			})
+			
+
+
+			// stop playing the youtube video when I close the modal
+			$('#myModal').on('hide.bs.modal', function (e) {
+				// a poor man's stop video
+				$("#video").attr('src',$videoSrc); 
+			}) 
+				
+				
+
+
+			
+			
+			// document ready  
+			});
+
+	</script>
 	</body>
 </html>
 
