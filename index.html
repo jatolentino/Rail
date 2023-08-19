@@ -60,6 +60,7 @@
 	
 	<div id="page">
 
+
 	
 	<!-- <div class="page-inner"> -->
 	<nav class="gtco-nav" role="navigation">
@@ -90,40 +91,40 @@
 			
 		</div>
 	</nav>
-	<script>
-	// 		document.addEventListener('click', function (event) {
-	// 	alert("hello")
-	// }, false);
 
-	// document.addEventListener('click', function (event) {
-	// 	alert("hello")
-	// 	}, false);
-	// function myfun(){
-	// 	alert("hello")
-	// }
-	</script>
 
 	<header id="gtco-header" class="gtco-cover gtco-cover-md" role="banner">
 		<!-- <header id="gtco-header" class="gtco-cover gtco-cover-md" role="banner" style="background-video: url(images/out.mp4)"> -->
-		<section class="wrapper">
-			<a target="_self"  role="button" class="u9k3ts" tabindex="0" style="position: absolute; left: 48.5%;  margin-top:400px">
-				<!-- <div data-testid="svgRoot-comp-k9gdjhbk" class="aizuI7 TcoJIb R8rhQA comp-k9gdjhbk"  > -->
-					
-				<!-- </div> -->
-				<p style="color:white;font-size:16px; ">Play Clip</p>
-				<p style="color:white;font-size:16px;margin-left:-30%">Launch on: 5/27/23 12:00 EST</p>
-			</a>
-			<div class="video-wrap">
-				
-				<video src="images/Rail.mp4"  autoplay="true" loop="true" style="width:100%" autoplay muted> 
-<!-- 				 <video src="images/intro-Rail.mp4"  autoplay="true" loop="true" style="width:100%" autoplay muted>-->
-			</video>
-			</div>
-		<div class="overlay-video">
-			<div class="container">
 			
-				<!-- Button trigger modal -->
-				<!-- <button type="button" class="btn btn-primary video-btn" data-toggle="modal" data-src="https://player.vimeo.com/video/58385453?badge=0&autoplay=1&loop=1" data-target="#myModal"> Play Vimeo Video </button> -->
+			<a target="_self"  role="button" class="u9k3ts" tabindex="0" style="position: absolute; left: 50%; transform: translate(-50%, -50%);justify-content: center; align-items: center;  text-align: center; top:50%">
+				<p style="color:white;font-size:16px;">Launch on: 5/27/23 12:00 EST</p>
+				<p style="color:white;font-size:16px; ">Play Clip</p>
+				<button class="svg-video" style="z-index: 1003;" type="button" data-toggle="modal" data-src="https://player.vimeo.com/video/855644841?badge=0&amp;autoplay=1&amp;player_id=0&amp;app_id=58479" data-target="#myModal">
+					<svg data-bbox="0 0 75 75" xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewBox="0 0 75 75" >
+						<g>
+							<path fill="#fff" d="m 56.95375,36.4675 -27.5,-18.75 C 29.07,17.4575 28.575,17.42875 28.165,17.645 27.75625,17.86125 27.5,18.28625 27.5,18.75 v 37.5 c 0,0.46375 0.25625,0.88875 0.66625,1.105 0.1825,0.0975 0.38375,0.145 0.58375,0.145 0.24625,0 0.4925,-0.07375 0.70375,-0.2175 l 27.5,-18.75 C 57.295,38.3 57.5,37.91375 57.5,37.5 c 0,-0.41375 -0.205,-0.8 -0.54625,-1.0325 z M 30,53.88375 V 21.11625 L 54.03125,37.5 Z M 37.5,0 C 16.8225,0 0,16.8225 0,37.5 0,58.1775 16.8225,75 37.5,75 58.1775,75 75,58.1775 75,37.5 75,16.8225 58.1775,0 37.5,0 Z m 0,72.5 c -19.29875,0 -35,-15.70125 -35,-35 0,-19.29875 15.70125,-35 35,-35 19.29875,0 35,15.70125 35,35 0,19.29875 -15.70125,35 -35,35 z"/>
+						</g>
+					</svg>
+				</button>
+			</a>
+			
+			<div >
+			<div class="video-wrap" style="z-index: -1;">
+				<video src="images/Rail.mp4"  style="width:100%; height: 100%" autoplay="true" style="z-index: -1" loop="true" autoplay muted> 		 
+				</video>
+			</div>
+		</div>
+
+			
+
+
+		<!-- <div class="overlay-video" style="margin-top:0px"> -->
+			<!-- <div class="container"> -->
+				<!-- <div class="video-wrap"> -->
+					<!-- <video src="images/Rail.mp4"  autoplay="true" loop="true" style="height:100%; z-index:100 " autoplay muted> 		 
+				</video> -->
+<!-- 
+				</div>
 				<button class="svg-video" style="margin-top:27%; margin-left:47.5%" type="button" data-toggle="modal" data-src="https://player.vimeo.com/video/855644841?badge=0&amp;autoplay=1&amp;player_id=0&amp;app_id=58479" data-target="#myModal">
 					<svg data-bbox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200" >
 						<g>
@@ -135,11 +136,10 @@
 						</g>
 					</svg>
 				</button>
-
-
-			</div>
+		</div> -->
 		
-		</div>
+
+
 		
 
 				<!-- Modal -->
@@ -161,7 +161,7 @@
 				
 
 	
-	</section>
+	
 	</header>
 
 	
@@ -352,8 +352,8 @@
 	</div>
 
 
-	<div class="gtco-cover gtco-cover-md" style="background-image: url(images/railv3.jpg)"  data-stellar-background-ratio="0.5">
-		<div class="overlay"></div>
+	<div class="gtco-cover gtco-cover-md" style="position: relative;background-image: url(images/railv3.jpg)"  data-stellar-background-ratio="0.5">
+		<!-- <div class="overlay"></div> -->
 		<div class="gtco-container text-center">
 			<div class="display-t">
 				<div class="display-tc">
