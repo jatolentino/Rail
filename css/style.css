@@ -238,12 +238,13 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 #gtco-header {
-  background: #4d4d4d;
+  background: #ffffff00;
+  /* margin-top: 100px */
 }
 @media screen and (max-width: 992px) {
   #gtco-header.gtco-cover {
     height: inherit !important;
-    padding: 3em 0 !important;
+    /* padding: 3em 0 !important; */
   }
 }
 @media screen and (max-width: 480px) {
@@ -272,7 +273,7 @@ h1, h2, h3, h4, h5, h6, figure {
   color: rgba(255, 255, 255, 0.5);
   letter-spacing: .15em;
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 }
 #gtco-header h1, #gtco-header h2 {
   margin: 0;
@@ -289,7 +290,7 @@ h1, h2, h3, h4, h5, h6, figure {
   #gtco-header h1 {
     font-size: 34px;
     line-height: 1.2;
-    margin-bottom: 10px; /* 10*/
+    margin-bottom: 0px; /* 10*/
   }
 }
 #gtco-header h2 {
@@ -298,67 +299,11 @@ h1, h2, h3, h4, h5, h6, figure {
   line-height: 1.5;
   margin-bottom: 30px;
 }
-#gtco-header .form-wrap {
-  border-top: 10px solid #09C6AB;
-  position: relative;
-  width: 100%;
-  -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.15);
-  -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.15);
-  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.15);
-}
-#gtco-header .form-wrap .tab-menu {
-  padding: 0 !important;
-  margin: 0 0 -10px 0 !important;
-  width: 100%;
-  float: left;
-  z-index: 12;
-  position: relative;
-}
-#gtco-header .form-wrap .tab-menu li {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  display: inline;
-  float: left;
-  width: 50%;
-  text-align: center;
-}
-#gtco-header .form-wrap .tab-menu li a {
-  padding: 10px 20px 20px 20px;
-  float: left;
-  width: 100%;
-  display: block;
-  background: rgba(255, 255, 255, 0.5);
-  color: #1a1a1a;
-}
-#gtco-header .form-wrap .tab-menu li a:hover {
-  color: #1a1a1a;
-}
-#gtco-header .form-wrap .tab-menu li.active a {
-  display: block;
-  padding: 10px 20px 20px 20px;
-  background: #fff;
-  color: #09C6AB;
-}
-#gtco-header .form-wrap .tab-menu li.gtco-first a {
-  border-top-left-radius: 7px;
-}
-#gtco-header .form-wrap .tab-menu li.gtco-second a {
-  border-top-right-radius: 7px;
-}
-#gtco-header .form-wrap .tab-content {
-  z-index: 10;
-  position: relative;
-  clear: both;
-  background: #fff;
-  padding: 30px;
-}
-#gtco-header .form-wrap .tab-content .tab-content-inner {
-  display: none;
-}
-#gtco-header .form-wrap .tab-content .tab-content-inner.active {
-  display: block;
-}
+
+
+
+
+
 
 #gtco-header,
 #gtco-counter,
@@ -377,9 +322,10 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .gtco-video {
-  height: 450px;
+  /* height: 450px; */
+  /* width: 100%; */
   overflow: hidden;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
   -webkit-border-radius: 7px;
   -moz-border-radius: 7px;
   -ms-border-radius: 7px;
@@ -438,13 +384,15 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .gtco-cover {
-  height: 900px;
+  width: 100%;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  position: relative;
+  position: absolute;
   float: left;
   width: 100%;
+  margin: 0 auto;
+  margin-top: 0;
 }
 .gtco-cover a {
   color: #09C6AB;
@@ -453,21 +401,29 @@ h1, h2, h3, h4, h5, h6, figure {
   color: white;
 }
 .gtco-cover .overlay-video {
-  z-index: 1;
+  z-index: -1;
   position: absolute;
-  bottom: 0;
-  top: 0;
+  /* top: 40px; */
   left: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0);
+  background: rgba(0, 0, 0, 1);
+  margin-top: 0px;
 }
+
+.video-wrap {
+  overflow: hidden;
+  /* z-index: -1; */
+  position: relative
+}
+
 .gtco-cover .overlay {
-  z-index: 1;
+  z-index: -1;
   position: absolute;
   bottom: 0;
   top: 0;
   left: 0;
   right: 0;
+  margin-top: 0px;
   background: rgba(0, 0, 0, 0.2);
 }
 .gtco-cover > .gtco-container {
@@ -517,7 +473,7 @@ h1, h2, h3, h4, h5, h6, figure {
 @media screen and (max-width: 768px) {
   .gtco-cover.gtco-cover-xs {
     height: inherit !important;
-    padding: 3em 0;
+    /* padding: 3em 0; */
   }
 }
 .gtco-cover.gtco-cover-xs .display-t,
@@ -529,7 +485,7 @@ h1, h2, h3, h4, h5, h6, figure {
 @media screen and (max-width: 768px) {
   .gtco-cover.gtco-cover-xs .display-t,
   .gtco-cover.gtco-cover-xs .display-tc {
-    padding: 3em 0;
+    /* padding: 3em 0; */
     height: inherit !important;
   }
 }
@@ -660,7 +616,7 @@ form label {
   color: rgba(255, 255, 255, 0.5);
   letter-spacing: .15em;
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 0;
 }
 #gtco-header .display-tc h1, #gtco-header .display-tc h2,
 #gtco-counter .display-tc h1,
@@ -1173,12 +1129,28 @@ form label {
   outline: none;
 }
 
-.gtco-nav-toggle {
+/* .gtco-nav-toggle {
   width: 25px;
   height: 25px;
   cursor: pointer;
   text-decoration: none;
+  z-index: 2001;
+} */
+
+.gtco-nav-toggle {
+  position: absolute;
+  right: 0px;
+  top: 10px;
+  z-index: 21;
+  padding: 6px 0 0 0;
+  display: block;
+  margin: 0 auto;
+  height: 44px;
+  width: 44px;
+  z-index: 1002;
+  border-bottom: none !important;
 }
+
 .gtco-nav-toggle.active i::before, .gtco-nav-toggle.active i::after {
   background: #444;
 }
@@ -1256,15 +1228,13 @@ form label {
 .gtco-nav-toggle {
   position: absolute;
   right: 0px;
-  top: 10px;
-  z-index: 21;
+  top: 20px;
   padding: 6px 0 0 0;
   display: block;
   margin: 0 auto;
   display: none;
   height: 44px;
   width: 44px;
-  z-index: 2001;
   border-bottom: none !important;
 }
 @media screen and (max-width: 768px) {
@@ -1909,9 +1879,9 @@ form label {
 	background-color: transparent;
 	border: 0;
 	padding: 0;
-  cursor: pointer;
-  margin-top: 17%;
-  margin-left: 48.5%;
+  /* cursor: pointer; */
+  /* margin-top: 17%;
+  margin-left: 48.5%; */
 }
 .svg-video svg {
 	cursor: pointer;
